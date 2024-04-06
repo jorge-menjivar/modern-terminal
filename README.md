@@ -32,6 +32,23 @@
   - Adds pyright support
 
 
+# Screenshots
+
+## GitHub Copilot in Neovim
+![Screenshot4](screenshots/screenshot4.png)
+
+## Github Copilot in Terminal
+![Screenshot3](screenshots/screenshot3.png)
+
+## Colorized `cat` Command Output
+![Screenshot1](screenshots/screenshot1.png)
+
+## Pretty Terminal with Starship
+![Screenshot2](screenshots/screenshot2.png)
+
+## Zellij
+![Screenshot5](screenshots/screenshot5.png)
+
 
 # Perform Complete Installation
 
