@@ -1,0 +1,7 @@
+auto_activate_base: false
+changeps1: false
+anaconda_upload: false
+# channels:
+#   - conda-forge
+#   - defaults
+# channel_priority: strict

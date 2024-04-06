@@ -1,0 +1,12 @@
+theme "gruvbox-dark"
+default_layout "compact"
+
+keybinds {
+    normal {
+        bind "Ctrl d" { CloseFocus; }
+    }
+    tmux {
+        bind "|" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "_" { NewPane "Down"; SwitchToMode "Normal";}
+    }
+}

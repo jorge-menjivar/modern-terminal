@@ -1,0 +1,185 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+format = """
+[┌── ](cyan)\
+$sudo\
+$username\
+$hostname\
+$localip\
+$shlvl\
+$singularity\
+$kubernetes\
+$directory\
+\\[ \
+$vcsh\
+$fossil_branch\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$c\
+$cmake\
+$cobol\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$elixir\
+$elm\
+$erlang\
+$fennel\
+$golang\
+$guix_shell\
+$haskell\
+$haxe\
+$helm\
+$java\
+$julia\
+$kotlin\
+$gradle\
+$lua\
+$nim\
+$nodejs\
+$ocaml\
+$opa\
+$perl\
+$php\
+$pulumi\
+$purescript\
+$conda\
+$python\
+$raku\
+$rlang\
+$red\
+$ruby\
+$rust\
+$scala\
+$swift\
+$terraform\
+$vlang\
+$vagrant\
+$zig\
+$buf\
+$nix_shell\
+$meson\
+$spack\
+$memory_usage\
+$aws\
+$openstack\
+$azure\
+$env_var\
+$crystal\
+$custom\
+\\] \
+$cmd_duration\
+$jobs\
+$time\
+$status\
+$os\
+$container\
+$shell\
+$line_break\
+$character\
+"""
+
+# '❯' '➜'
+[character]
+success_symbol = '[└─❯](cyan)'
+error_symbol = '[└─[❯](red)](cyan)'
+
+[c]
+symbol = " "
+commands = [["clang", "--version"], ["cc", "--version"], ["gcc", "--version"]]
+
+[conda]
+symbol = " "
+format = '[$symbol$environment]($style) '
+
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style) '
+
+[elm]
+symbol = " "
+
+[git_commit]
+format = '[\($hash$tag\)]($style) '
+tag_disabled = false
+tag_symbol =	' 🔖'
+disabled = false
+only_detached = true
+
+[golang]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = "⌘ "
+
+[julia]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[meson]
+symbol = "喝 "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[python]
+disabled = true
+symbol = ""
+format = '$symbol[${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+
+[rlang]
+symbol = "ﳒ "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
+
+[username]
+disabled = true
+
+[hostname]
+ssh_only = true
+format = '[$ssh_symbol](bold blue)[$hostname](bold green):'
+disabled = false
+
+[sudo]
+symbol = '💀 '
+format = '$symbol'
+disabled = false
+
+[git_branch]
+symbol = ' '
+format = '[$symbol$branch(:$remote_branch)]($style) '
