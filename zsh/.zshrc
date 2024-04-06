@@ -77,6 +77,11 @@ bindkey -M viins '``' sudo-command-line # bind `` to sudo-command-line in insert
 bindkey '^\' zsh_gh_copilot_explain     # bind Ctrl+\ to explain with copilot
 bindkey '^[\' zsh_gh_copilot_suggest    # bind Alt+\ to suggest with copilot
 
+# if macOS
+if [[ "$OSTYPE" == darwin* ]]; then
+    bindkey '«' zsh_gh_copilot_suggest    # bind Option+\ to suggest with copilot
+fi
+
 # export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.17.0.8-1.fc37.x86_64"
 export ANDROID_HOME="$HOME/.android/sdk"
 export ANDROID_SDK_ROOT="$ANDROID_HOME"

@@ -10,7 +10,9 @@
 - Installs the LiberationMono nerd font, which includes more characters
 - Sets ZSH as the default shell
 - Installs [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) and configures it
-- Adds github copilot to terminal. Use with `ctrl + \` and `alt + \` shortcuts.
+- Adds github copilot to terminal.
+  - linux: Use with `ctrl + \` to explain, and `alt + \` to suggest.
+  - macOS: Use with `ctrl + \` to explain, and `option + \` to suggest.
 - Installs [https://starship.rs](https://starship.rs/)
 - Install brew if not installed
 - Installs Rust
