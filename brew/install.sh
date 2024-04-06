@@ -7,7 +7,6 @@ if ! command -v brew &>/dev/null; then
   # Add Homebrew to PATH
   # if the os is fedora or redhat
   if [ -f /etc/redhat-release ]; then
-
     echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >>~/.zprofile
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
   fi

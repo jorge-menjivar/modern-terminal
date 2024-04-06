@@ -146,7 +146,7 @@ brew install eth-p/software/bat-extras-batgrep   # Batgrep (bat plugin): search 
 # ----------------------------------Nerd Fonts-------------------------------
 # Nerd Font (LiberationMono)
 # Download the font to tmp dir
-curl -Lo "/tmp/LiberationMono.zip" "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/LiberationMono.zip"
+curl -Lo "/tmp/LiberationMono.zip" "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.0/LiberationMono.zip"
 
 # Unzip and move the font to the fonts dir. Updates the fonts if they already exist.
 # Linux

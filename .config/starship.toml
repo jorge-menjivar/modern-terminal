@@ -151,7 +151,7 @@ symbol = " "
 symbol = " "
 
 [package]
-symbol = " "
+symbol = "📦 "
 
 [python]
 disabled = true
