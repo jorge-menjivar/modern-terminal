@@ -184,6 +184,25 @@ alias cr="printf '\033[6 q'"
 alias calibre="flatpak run com.calibre_ebook.calibre"
 alias postman="GDK_BACKEND=wayland flatpak run com.getpostman.Postman --ozone-platform=wayland --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations"
 
+#--------------------Copy and Paste---------------------------
+# If Linux
+if [ "$(uname -s)" = "Linux" ]; then
+    # Use wl-copy if on wayland, otherwise use xclip
+    if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+        alias copy="wl-copy"
+        alias paste="wl-paste"
+    else
+        alias copy="xclip -selection clipboard"
+        alias paste="xclip -selection clipboard -o"
+    fi
+fi
+
+# If macOS
+if [ "$(uname -s)" = "Darwin" ]; then
+    alias copy="pbcopy"
+    alias paste="pbpaste"
+fi
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
