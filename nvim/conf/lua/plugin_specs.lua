@@ -148,15 +148,6 @@ local plugin_specs = {
     end,
   },
 
-  {
-    "akinsho/bufferline.nvim",
-    event = { "BufEnter" },
-    cond = firenvim_not_active,
-    config = function()
-      require("config.bufferline")
-    end,
-  },
-
   -- fancy start screen
   {
     "nvimdev/dashboard-nvim",
