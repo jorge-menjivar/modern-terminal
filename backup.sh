@@ -29,6 +29,10 @@ cp ~/.tmux.conf .tmux.conf
 rm -r .config/zellij
 cp -r ~/.config/zellij .config/zellij
 
+# Neovim
+rm -r nvim/conf
+cp -r ~/.config/nvim nvim/conf
+
 #---------------------------------ZSH-------------------------------------
 cd zsh
 chmod +x ./backup.sh
