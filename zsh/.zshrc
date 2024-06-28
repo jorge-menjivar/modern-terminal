@@ -79,7 +79,7 @@ bindkey '^[\' zsh_gh_copilot_suggest    # bind Alt+\ to suggest with copilot
 
 # if macOS
 if [[ "$OSTYPE" == darwin* ]]; then
-    bindkey '«' zsh_gh_copilot_suggest    # bind Option+\ to suggest with copilot
+    bindkey '«' zsh_gh_copilot_suggest # bind Option+\ to suggest with copilot
 fi
 
 # export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.17.0.8-1.fc37.x86_64"
@@ -139,6 +139,7 @@ if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     alias code="code --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations"
     alias cursor="$HOME/Applications/cursor-*.AppImage --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations"
     alias slack="slack --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations,UseOzonePlatform,WebRTCPipeWireCapturer"
+    alias redis-insight="$HOME/Applications/RedisInsight-linux-x86_64.AppImage --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations"
 fi
 
 # Bat aliases
