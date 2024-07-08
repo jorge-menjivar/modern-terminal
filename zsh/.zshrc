@@ -103,7 +103,6 @@ export CALIBRE_USE_DARK_PALETTE=1
 
 export CAPACITOR_ANDROID_STUDIO_PATH="$HOME/.local/share/JetBrains/Toolbox/apps/AndroidStudio/ch-0/211.7628.21.2111.8309675/bin/studio.sh"
 
-export QT_QPA_PLATFORM=wc
 export ANSIBLE_CONFIG=$HOME/.config/ansible/ansible.cfg
 
 export DENO_INSTALL="$HOME/.deno"
@@ -134,6 +133,7 @@ eval "$(starship init zsh)"
 # if on wayland, then use the following aliases
 
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+    # export QT_QPA_PLATFORM=wayland
     alias brave="brave --ozone-platform=wayland --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations"
     alias codium="codium --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations"
     alias code="code --ozone-platform-hint=auto --enable-features=WaylandWindowDecorations"
@@ -211,3 +211,5 @@ export NVM_DIR="$HOME/.nvm"
 export CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true
 
 export EDITOR=nvim
+fpath+=${ZDOTDIR:-~}/.zsh_functions
+fpath+=${ZDOTDIR:-~}/.zsh_functions
