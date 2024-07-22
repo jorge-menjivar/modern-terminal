@@ -5,6 +5,21 @@
 - macOS
 - Ubuntu
 
+# Installation
+
+```sh
+git clone --depth 1 git@github.com:jorge-menjivar/modern-terminal.git
+cd modern-terminal.git
+sh install.sh
+```
+
+# Restore Configuration Files
+
+Only restore configuration files if you already installed everything.
+```sh
+sh restore.sh
+```
+
 # Features
 - (Optional) Installs Alacritty
 - Installs the LiberationMono nerd font, which includes more characters
@@ -50,19 +65,3 @@
 
 ## Zellij
 ![Screenshot5](screenshots/screenshot5.png)
-
-
-# Perform Complete Installation
-
-```sh
-git clone --depth 1 https://github.com/jorge-menjivar/workstation-config.git
-cd workstation-config
-sh install.sh
-```
-
-# Restore Configuration Files
-
-Only restore configuration files if you already installed everything.
-```sh
-sh restore.sh
-```
