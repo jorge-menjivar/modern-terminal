@@ -9,7 +9,7 @@
 
 ```sh
 git clone --depth 1 git@github.com:jorge-menjivar/modern-terminal.git
-cd modern-terminal.git
+cd modern-terminal
 sh install.sh
 ```
 
