@@ -10,14 +10,14 @@
 ```sh
 git clone --depth 1 git@github.com:jorge-menjivar/modern-terminal.git
 cd modern-terminal
-sh install.sh
+bash install.sh
 ```
 
 # Restore Configuration Files
 
 Only restore configuration files if you already installed everything.
 ```sh
-sh restore.sh
+bash restore.sh
 ```
 
 # Features
