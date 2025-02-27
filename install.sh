@@ -151,7 +151,7 @@ curl -Lo "/tmp/LiberationMono.zip" "https://github.com/ryanoasis/nerd-fonts/rele
 # Unzip and move the font to the fonts dir. Updates the fonts if they already exist.
 # Linux
 if [ "$(uname -s)" = "Linux" ]; then
-    unzip -o "/tmp/LiberationMono.zip" -d "~/.local/share/fonts"
+    unzip -o "/tmp/LiberationMono.zip" -d ~/.local/share/fonts
     fc-cache -f -v # Update the font cache
 fi
 
